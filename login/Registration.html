@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="section">
+     <a href="../index.html"><button class="backbtn">
+            <i class="fa-solid fa-angle-left"></i>
+        </button></a>
+        <div class="layer layer_2">
+            <div class="welcome_text">
+                <p> Hello! Register to Get Started </p>
+            </div>
+            <form class="form_1" action="/auth/register" method="POST">
+                <div class="form_elem">
+                    <input name="Username" type="text" class="form-control lastname" id="username" placeholder="Username" required>
+                </div>
+                <div class="form_elem">
+                    <input name="Email" type="email" class="form-control lastname" id="email" placeholder="Email" required>
+                </div>
+                <div class="form_elem">
+                    <input name="MobileNumber" type="text" class="form-control lastname" id="mobile" placeholder="Mobile Number" required>
+                </div>
+                <div class="form_elem">
+                    <input name="Qualification" type="text" class="form-control lastname" id="qualification" placeholder="Highest Qualification" required>
+                </div>
+                <div class="form_elem">
+                    <input name="Aadharcard" type="text" class="form-control lastname" id="aadhar" placeholder="Aadharcard" required>
+                </div>
+                <div class="form_elem">
+                    <input name="Image" type="text" class="form-control lastname" id="image" placeholder="Image" required>
+                </div>
+                <div class="form_elem">
+                    <input name="Password" type="password" class="form-control lastname" id="password" placeholder="Password" required>
+                </div>
+                <div class="form_elem">
+                    <input name="ConfirmPassword" type="password" class="form-control lastname" id="confirm_password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="login"> Register </button>
+                <div class="footer_text">
+                    Already have an account? <button type="button" class="regd"> Login Now</button> 
+                </div>
+            </form>
+            {{#if message}}
+            <h4 class="alert alert danger mt-4">{{message}}</h4>
+            {{/if}}
+        </div>
+        
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-icon,
+.notification-icon {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.logo .apt {
+    color: #3498db; /* Blue color for 'apt.' */
+}
+
+.logo .sales-assist {
+    color: #333; /* Darker color for 'Sales Assist' */
+    margin-left: 5px;
+}
+
+/* Main content styles */
+.main-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin: 0 10px 10px 0;
+}
+
+.stat p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stat .number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3498db; /* Blue color for numbers */
+}
+
+.attendance {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-info {
+    margin-bottom: 20px;
+}
+
+.attendance-info p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.checkin-checkout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkin,
+.checkout {
+    flex: 1;
+    text-align: center;
+}
+
+.checkin p,
+.checkout p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.current-location {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.current-location p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.current-location img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Locations styles */
+.locations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.location {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.location .time {
+    font-weight: bold;
+    color: #3498db; /* Blue color for time */
+}
+
+.location .location-name {
+    font-weight: bold;
+}
+
+.location .location-address {
+    color: #777;
+}
+
+/* Checkout button styles */
+.checkout-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #3498db; /* Blue background color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .statistics {
+        flex-direction: column;
+    }
+
+    .stat {
+        flex: 1 1 auto;
+        margin: 0 0 10px 0;
+    }
+
+    .checkin,
+    .checkout {
+        flex: 1 1 100%;
+    }
+
+    .locations {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}

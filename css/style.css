@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Index page */
+
+.background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../image/background_1.jpg);
+  min-height: 100vh;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+}
+.fontstyle {
+  font-size: 6em;
+  color: whitesmoke;
+}
+.buttons {
+  margin-top: 6em;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5em 1.9em;
+}
+.button button {
+  font-size: 2em;
+  width: 8em;
+  cursor: pointer;
+}
+
+/* Login page */
+#section {
+  background-color: rgb(64, 131, 240);
+  min-height: 100vh;
+}
+.backbtn {
+  margin-left: 1.2em;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 25vh;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+}
+.layer {
+  background-color: aliceblue;
+  border-top-right-radius: 4em;
+  border-top-left-radius: 4em;
+}
+.layer_1{
+  min-height: 65vh;
+}
+.welcome_text {
+  padding: 1em 4em;
+  font-size: 1.5em;
+}
+.form_1,.welcome_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_1 input {
+  text-align: center;
+  width: 20em;
+  height: 3em;
+  border-radius: 1.2em;
+  margin: 0.2em;
+}
+.form_elem1{
+  margin: 1em;
+}
+.forgot_pwd {
+  color: grey;
+  cursor: pointer;
+  margin-top: 1em;
+}
+.login {
+  margin-top: 2.5em;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.5em;
+  border-style: none;
+  background-color: rgb(64, 131, 240);
+  color: white;
+}
+.regd{
+  color: rgb(18, 197, 210);
+  font-weight: bold;
+  border-style: none;
+  margin-top: 1em;
+  cursor: pointer;
+}
+/* Registration Page */
+.layer_2{
+  margin-top: 2em;
+  min-height: 85.5vh;
+}
+.welcome_text p{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
